@@ -7,6 +7,18 @@ window.onload = () => {
         e.target.value+=paste+"\n"
     }
     
+    document.getElementById('btn_copy').onclick = e => {
+        document.getElementById('yt_results_area').select()
+        document.execCommand('copy');
+
+    }
+    
+    document.getElementById('btn_copy_win').onclick = e => {
+        document.getElementById('yt_results_area_win').select()
+        document.execCommand('copy');
+
+    }
+
     document.getElementById('btn_clear_all').onclick = e => {
         document.getElementById('value').value=""
         document.getElementById('results').innerHTML=""
