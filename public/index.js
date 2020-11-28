@@ -6,6 +6,14 @@ window.onload = () => {
         let paste = (e.clipboardData || window.clipboardData).getData('text');
         e.target.value+=paste+"\n"
     }
+    
+    document.getElementById('btn_clear_all').onclick = e => {
+        document.getElementById('value').value=""
+        document.getElementById('results').innerHTML=""
+        document.getElementById('results_area').value=""
+        document.getElementById('yt_results_area').value=""
+
+    }
 
     document.getElementById('convert').onclick = e => {
 
@@ -43,15 +51,3 @@ window.onload = () => {
 
     }
 }
-
-
-/*
-<p>
-    <a href="https://marketing-underground.teachable.com/courses/623154/lectures/11139931?wvideo=ekitib9wp9">
-        <img src="https://embed-ssl.wistia.com/deliveries/48d0b273614250a5c583cb55ee64be9b6dded032.jpg?image_crop_resized=800x450&image_play_button_size=2x&image_play_button=1&image_play_button_color=ff3f20e0" width="400" height="225" style="width: 400px; height: 225px;">
-    </a>
-</p>
-<p>
-    <a href="https://marketing-underground.teachable.com/courses/623154/lectures/11139931?wvideo=ekitib9wp9">Introduction | Marketing Underground</a>
-</p>
-*/
